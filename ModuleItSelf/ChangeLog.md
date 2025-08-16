@@ -1,44 +1,41 @@
 注意：
 
 ［1］关于Scheduler.cfg和模块日志：
-
-可以在模块的MODS目录的Scheduler.cfg里，自定义如何处理部分官调（模块安装即用，一般情况无需配置）
-用于调试的日志位于LOG目录
-
-
-
+<br><br>
+    可以在模块的MODS目录的Scheduler.cfg里，自定义如何处理部分官调（模块安装即用，一般情况无需配置）
+    用于调试的日志位于LOG目录
+<br><br>
 ［2］如何恢复官方调度：
-
-卸载模块并重启
-
-
-
+<br><br>
+    卸载模块并重启
+<br><br>
 ［3］某些游戏(如三角洲行动 和平精英 原神)中GPU频率异常的原因与措施：
-
-可能由游戏反作弊检测导致，建议完善ROOT隐藏
-(SOC厂商为天玑时)可能由本模块导致，可尝试在Scheduler.cfg中尝试调整【GED】相关的参数
-
-
-
+<br><br>
+    可能由游戏反作弊检测导致，建议完善ROOT隐藏
+    (SOC厂商为天玑时)可能由本模块导致，可尝试在Scheduler.cfg中尝试调整【GED】相关的参数
+<br><br><br><br><br><br>
 
 
 
+  
 Version21改动→22：
 
+［P2］
+
+    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GED部分特殊功能的参数项
+    新增 action.sh新增开启或关闭Horae进程的功能，尝试兼顾因Horae进程关闭而失效的功能
+［P1］
+
+    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GPU频率上下限参数项
+    优化 Scheduler.cfg中［Mediatek专属］的GPT部分，细化配置项；尝试改进Scheduler.cfg的排版
 ［P0］
 
     优化 将GED代码单独置于一个脚本以便无需重启地修改GED参数，并相应地优化Scheduler.cfg中GED、FPSGO说明和排版，并为FPSGO添置单独关闭线程放置子功能的配置项
     新增 action.sh新增"恢复【游戏助手】部分功能"功能（实为安装或卸载"DealCOSA"子模块），可用于在不影响调度的情况下恢复因屏蔽官调而失效的[游戏助手]部分功能
     修复 解决了action.sh中"便捷打开【游戏助手】页面"功能极易导致的误触问题
     修复 回退了Scheduler.cfg中对GPU的调整——解决在某些机型导致GPU负载始终为0且不升频的问题，修改MAGT系统属性时不再开机删除属性——解决ROOT隐藏问题
-［P1］
 
-    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GPU频率上下限参数项
-    优化 Scheduler.cfg中［Mediatek专属］的GPT部分，细化配置项；尝试改进Scheduler.cfg的排版
-［P2］
 
-    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GED部分特殊功能的参数项
-    新增 action.sh新增开启或关闭Horae进程的功能，尝试兼顾因Horae进程关闭而失效的功能
 
 
 Version20改动→21［P0-P9］：
