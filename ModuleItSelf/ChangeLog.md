@@ -1,7 +1,7 @@
 注意：
 
-［1］关于Scheduler.cfg和模块日志：
-    可以在模块的MODS目录的Scheduler.cfg里，自定义如何处理部分官调（模块安装即用，一般情况无需配置）
+［1］关于ConfigTable.cfg和模块日志：
+    可以在模块的MODS目录的ConfigTable.cfg里，自定义如何处理部分官调（模块安装即用，一般情况无需配置）
     用于调试的日志位于LOG目录
 
 ［2］如何恢复官方调度：
@@ -10,7 +10,7 @@
 
 ［3］某些游戏(如三角洲行动 和平精英 原神)中GPU频率异常的原因与措施：
     可能由游戏反作弊检测导致，建议完善ROOT隐藏
-    (SOC厂商为天玑时)可能由本模块导致，可尝试在Scheduler.cfg中尝试调整【GED】相关的参数
+    (SOC厂商为天玑时)可能由本模块导致，可尝试在ConfigTable.cfg中尝试调整【GED】相关的参数
     
 ［4］再次提醒——安装救砖模块，避免无法开机
 
@@ -22,23 +22,26 @@
   
 Version21改动→22：
 
+［P4］
+
+    去冗 删除ConfigTable.cfg中SchedAssist的负载均衡子功能
 ［P3］
 
-    优化 改进MAGT处理措施、日志输出，修改其在Scheduler.cfg中对应文本的排版并默认关闭MAGT
+    优化 改进MAGT处理措施、日志输出，修改其在ConfigTable.cfg中对应文本的排版并默认关闭MAGT
 ［P2］
 
-    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GED部分特殊功能的参数项
+    新增 ConfigTable.cfg中［Mediatek专属］的GED部分，新增GED部分特殊功能的参数项
     新增 action.sh新增开启或关闭Horae进程的功能，尝试兼顾因Horae进程关闭而失效的功能
 ［P1］
 
-    新增 Scheduler.cfg中［Mediatek专属］的GED部分，新增GPU频率上下限参数项
-    优化 Scheduler.cfg中［Mediatek专属］的GPT部分，细化配置项；尝试改进Scheduler.cfg的排版
+    新增 ConfigTable.cfg中［Mediatek专属］的GED部分，新增GPU频率上下限参数项
+    优化 ConfigTable.cfg中［Mediatek专属］的GPT部分，细化配置项；尝试改进ConfigTable.cfg的排版
 ［P0］
 
-    优化 将GED代码单独置于一个脚本以便无需重启地修改GED参数，并相应地优化Scheduler.cfg中GED、FPSGO说明和排版，并为FPSGO添置单独关闭线程放置子功能的配置项
+    优化 将GED代码单独置于一个脚本以便无需重启地修改GED参数，并相应地优化ConfigTable.cfg中GED、FPSGO说明和排版，并为FPSGO添置单独关闭线程放置子功能的配置项
     新增 action.sh新增"恢复【游戏助手】部分功能"功能（实为安装或卸载"DealCOSA"子模块），可用于在不影响调度的情况下恢复因屏蔽官调而失效的[游戏助手]部分功能
     修复 解决了action.sh中"便捷打开【游戏助手】页面"功能极易导致的误触问题
-    修复 回退了Scheduler.cfg中对GPU的调整——解决在某些机型导致GPU负载始终为0且不升频的问题，修改MAGT系统属性时不再开机删除属性——解决ROOT隐藏问题
+    修复 回退了ConfigTable.cfg中对GPU的调整——解决在某些机型导致GPU负载始终为0且不升频的问题，修改MAGT系统属性时不再开机删除属性——解决ROOT隐藏问题
 
 
 
@@ -46,12 +49,12 @@ Version21改动→22：
 Version20改动→21［P0-P9］：
 
     优化 GameOpt参数处理，可进一步屏蔽除[COSA-OiFace]外的官方线程放置
-    新增 Scheduler.cfg中针对联发科SOC部分新增了是否关闭GED_KPI选项
+    新增 ConfigTable.cfg中针对联发科SOC部分新增了是否关闭GED_KPI选项
     修复 阻止系统关闭CPU核心的办法可能导致设备异常重启
-    新增 Scheduler.cfg中新添几项配置
+    新增 ConfigTable.cfg中新添几项配置
     优化 [应用增强服务]的数据库处理流程，尝试解决概率导致[游戏助手]侧边栏消失的问题
     新增 action.sh新增恢复游戏助手侧边栏的两个选项（但删除了旧的其它选项）
-    优化 细化Scheduler.cfg中PowerHAL配置清空项，并删除GPU参数矫正配置项而增加几个详细的GPU参数配置项
+    优化 细化ConfigTable.cfg中PowerHAL配置清空项，并删除GPU参数矫正配置项而增加几个详细的GPU参数配置项
     优化 完善新添的GPU配置项
     优化 继续完善新添的GPU配置项解释，尝试解决天玑机型在某些游戏中GPU频率异常高的问题
 
@@ -61,7 +64,7 @@ Version19改动→20：
     对于action.sh：加入[安装系统自带的游戏助手和应用增强服务选项](方便恢复)，且修复可能引发问题的疏忽：[并非为当前用户安装](比如在多用户设备上)，并[稍微修改了文本排版和等待时间]，加入[超时跳过]功能
     解决了可能导致应用状态(启用 冻结 卸载)检测不准确的问题
     矫正应用状态异常(明明已安装已启用却被系统记录为已卸载)的问题，这个问题可能导致：①oiface进程运行时其官调未能完全屏蔽 ②游戏助手侧边栏无法启动
-    删除Scheduler.cfg中一些无用的配置项（应用增强服务的oiface和稳帧组件开关），官调属性配置项可取值，加上DEFAULT（取默认值）
+    删除ConfigTable.cfg中一些无用的配置项（应用增强服务的oiface和稳帧组件开关），官调属性配置项可取值，加上DEFAULT（取默认值）
     修改oiface配置处理方式
     解决模块覆盖安装问题
     解决PowerHAL配置在8100/9000以后的机型可能无法重载的问题
@@ -73,6 +76,6 @@ Version18改动→19：
     解除天玑9400温控锁以达到GPU频率上限（达到1612MHz）
     修复在ColorOS12/13或RealmeUI3/4上oiface组件可能不会被恢复导致官调无法完全恢复的问题
     如果[应用增强服务]被冻结，则每次开机不再处理应用增强服务
-    继续完善Scheduler.cfg的配置项
+    继续完善ConfigTable.cfg的配置项
     添加了action.sh(即模块列表中，模块的"执行"按钮)，可在其中通过音量键选择是否卸载[应用增强服务]和[游戏助手]
     其它不值得注意的细节(更新jq 更彻底地简化oiface.config 更新安装提示 不再启动模块将要干涉的官调进程....)
