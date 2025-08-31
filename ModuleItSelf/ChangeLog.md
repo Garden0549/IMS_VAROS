@@ -22,6 +22,10 @@
   
 Version21改动→22：
 
+［P5］
+
+    新增 清空两个oiface相关属性，或许能加强oiface官调的屏蔽效果
+    优化 略微改进action.sh的操作逻辑
 ［P4］
 
     去冗 删除ConfigTable.cfg中SchedAssist的负载均衡子功能
