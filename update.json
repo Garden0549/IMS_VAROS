@@ -1,6 +1,6 @@
 {
-	"version": "22_9",
-	"versionCode": 229,
-	"zipUrl": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/IMS_VAROS_R22P9.zip",
+	"version": "23",
+	"versionCode": 230,
+	"zipUrl": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/IMS_VAROS_R23.zip",
 	"changelog": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/ChangeLog.md"
 }
