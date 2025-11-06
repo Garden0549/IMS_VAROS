@@ -20,6 +20,12 @@
 
 Version22改动→23：
 
+［P1］
+
+    去冗    X_Qualcomm_Misc里，移除可能导致WIFI自动关闭无法启动的CNSS官调屏蔽功能
+    修复    X_Qualcomm_Misc里，解决了Kgsl3d0的频率范围检测错误与设置失效问题
+    新增    X_Qualcomm_Misc里，新增PerformanceBoost屏蔽功能，并在ConfigTable.cfg里的高通官调部分提供调试接口
+    去冗    ConfigTable.cfg里的高通官调部分，移除了没有调试必要的MSM_Performance配置项
 ［P0］
 
     去冗 action.sh里，移除无用且有副作用的"尝试恢复［游戏助手］部分功能"
