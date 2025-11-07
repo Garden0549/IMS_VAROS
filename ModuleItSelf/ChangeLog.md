@@ -20,6 +20,9 @@
 
 Version22改动→23：
 
+［P2］
+
+    优化    【重要更新】PublicFuncs.sh里，不再使用"/data/cache/模块ID"作为缓存目录并移除因此无法使用或没有意义的函数，以避免可能由此导致的设备无法开机，
 ［P1］
 
     去冗    X_Qualcomm_Misc里，移除可能导致WIFI自动关闭无法启动的CNSS官调屏蔽功能
