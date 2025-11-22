@@ -8,6 +8,9 @@
 
 ## *『更新日志』*
 - ### ［Version22→23］
+［P4］
+
+    修复    【重要更新】F_ColorOS_KernelModules里，移除"正常化电流采样率"功能，以解决可能在某些机型上导致的"电流采样率极低"以及诱发的"电量不更新"问题
 ［P3］
 
     新增    X_Qualcomm_Misc里，改进Walt、MSM_Performance、Kgsl3d0的处理，新处理两条系统属性
