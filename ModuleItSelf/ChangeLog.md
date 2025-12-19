@@ -8,6 +8,9 @@
 
 ## *『更新日志』*
 - ### ［Version22→23］
+［P6］
+
+    优化    ConfigTable.cfg里，关闭Orms进程的配置项新增一条说明，并将其默认值从"STOP"改回"ON"以避免可能的问题
 ［P5］
 
     去冗    ConfigTable.cfg里，移除Oiface与快充相关的提示
