@@ -8,6 +8,11 @@
 
 ## *『更新日志』*
 - ### ［Version22→23］
+［P8］
+
+    优化    Y_MediaTeK_Misc里，"格式化"了一下GED.cfg以便查看
+    优化    ConfigTable.cfg的【GED官调】部分新增有关[天玑9200]的内容
+    新增    Y_MediaTeK_Misc里，新增"负载模式""工作负载模式"两个参数，以解决在部分平台GPU负载"不合常理"且干扰余量设置的问题，并在ConfigTable.cfg、GED.cfg新增相应说明
 ［P7］
 
     修复    X_Qualcomm_Misc里，改进在8Elite及更早平台的第二重GPU频率范围限制参数的处理方式(不再挂载)，消除可能的但实际上不影响GPU的误会
