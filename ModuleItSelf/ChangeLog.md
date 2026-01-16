@@ -8,6 +8,13 @@
 
 ## *『更新日志』*
 - ### ［Version22→23］
+［P9］
+
+    修复    A_ColorOS_OrmsUrcc里，customize.sh里，简化Orms配置时，修复长久隐蔽的、可能导致配置无效而影响屏蔽效果的语法错误——转义4个双引号，并尝试更彻底地通过配置关闭Orms
+    优化    A_ColorOS_OrmsUrcc里，考虑到数据读取时机，将在安装模块时将简化的Orms配置复制到自定义Orms配置目录，确保模块第一次安装重启后就完全生效
+    优化    D_ColorOS_COSA里，考虑到数据读取时机，将在安装模块时执行一次service.sh，确保模块第一次安装重启后就完全生效
+    新增    action.sh与customize.sh里，新增一条恢复游戏助手侧边栏的提示
+    新增    Y_MediaTeK_Misc及其在ConfigTable.cfg中对应部分的【GED官调】部分，适配[天玑9500]
 ［P8］
 
     优化    Y_MediaTeK_Misc里，"格式化"了一下GED.cfg以便查看，并增删修正了一些内容
