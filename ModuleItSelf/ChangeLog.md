@@ -8,6 +8,13 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P4］
+
+    新增    F_ColorOS_KernelModules里，新增关闭Geas内核模块的功能，并在ConfigTable.cfg中提供对应接口
+    新增    Y_MediaTeK_Misc里，新增"阻止自天玑9200及同年平台出现的触控临时性能提升"功能
+    修复    Y_MediaTeK_Misc里，尝试解决“GPU、CPU频率受彼此限制、受电池电量限制、受电流大小限制”功能不生效的问题
+    新增    E_ColorOS_Horae里，新增解除"可能的IPA内核模块限频"功能
+    修复    E_ColorOS_Horae里，尝试解决“可能无法通过Horae内核模块修改外壳温度”的问题
 ［P3］
 
     修复    action.sh里，更换［应用增强服务］和［游戏助手］的安装包的搜寻方式，尝试彻底解决找不到系统安装包的问题
