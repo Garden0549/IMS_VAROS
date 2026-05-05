@@ -8,6 +8,13 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P5］
+
+    新增    F_ColorOS_KernelModules里，新增"通过Oplus_SLC内核模块改善SLC分配"功能
+    优化    Y_MediaTeK_Misc里，针对perfmgr、powerhal_cpu_ctrl的屏蔽功能，适配天玑9500
+    新增    Y_MediaTeK_Misc里，新增官方调度屏蔽功能：touch_boost、pelt_hint、FRS、game(EngineCooler除外)、SBE、perfmgr_powerhal
+    去冗    Y_MediaTeK_Misc里，去除随ConfigTable.cfg去冗而无用的功能
+    去冗    ConfigTable.cfg里，鉴于联发科官方调度的复杂关系，不再提供FPSGO、MAGT官调相关接口并默认关闭之
 ［P4］
 
     新增    F_ColorOS_KernelModules里，新增关闭Geas内核模块的功能，并在ConfigTable.cfg中提供对应接口
