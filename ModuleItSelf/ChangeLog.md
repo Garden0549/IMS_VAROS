@@ -8,6 +8,11 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P6］
+
+    新增    C_ColorOS_GameOpt里，新增1个屏蔽参数
+    新增    Y_MediaTeK_Misc里，新增针对mtk_lpm内核模块中"多核深度睡眠功能"的优化
+    新增    Y_MediaTeK_Misc里，真·解决"GPU、CPU频率受彼此限制"功能不生效问题 （之前没有找到正确的参数）
 ［P5］
 
     新增    F_ColorOS_KernelModules里，新增"通过Oplus_SLC内核模块改善SLC分配"功能
