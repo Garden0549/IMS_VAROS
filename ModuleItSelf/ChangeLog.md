@@ -8,6 +8,11 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P7］
+
+    新增    F_ColorOS_KernelModules里，新增会处理的内核模块：osml_monitor、smart_freq、freqqos_monitor、freq_qos_arbiter、close_loop，模块具体功能见ConfigTable.cfg，并在ConfigTable.cfg中提供对应接口
+    修复    X_Qualcomm_Misc里，修复很多个版本前就已实际失效的"输入事件临时性能提升(原：输入事件加速)"功能
+    新增    X_Qualcomm_Misc里，新增关闭"smart_freq(根据IPC分阶段限制CPU频率)"的功能
 ［P6］
 
     新增    C_ColorOS_GameOpt里，新增1个屏蔽参数
