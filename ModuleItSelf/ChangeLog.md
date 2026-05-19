@@ -8,6 +8,10 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P8］
+
+    新增    X_Qualcomm_Misc里，针对Kgsl3d0驱动，新增一些功能优化
+    修复    X_Qualcomm_Misc里，解决在部分设备(已知一加13)上GPU无法请求DDR的问题
 ［P7］
 
     新增    F_ColorOS_KernelModules里，新增会处理的内核模块：osml_monitor、smart_freq、freqqos_monitor、freq_qos_arbiter、close_loop，模块具体功能见ConfigTable.cfg，并在ConfigTable.cfg中提供对应接口
