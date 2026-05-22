@@ -8,6 +8,14 @@
 
 ## *『更新日志』*
 - ### ［Version24→25］
+［P9］
+
+    新增    Y_MediaTeK_Misc里，service.sh，新增task_turbo、jank_detection、hps函数
+    新增    Y_MediaTeK_Misc里，post-fs-data.sh，PowerHAL函数，新增"等效清空关联配置"功能，并在ConfigTable.cfg提供接口，原"PowerHAL配置"改名为"主要配置"
+    优化    Y_MediaTeK_Misc里，service.sh——FPSGO函数，新增处理项：［xgf进程、tchbst(触摸性能提升)内核模块］；perfmgr函数，新增处理项：［tchbst内核模块］
+    优化    Y_MediaTeK_Misc里，post-fs-data.sh，PowerHAL函数，更换配置搜寻方式，确保能找到配置
+    优化    Y_MediaTeK_Misc里，service.sh，为避免可能的实际频率异常，cpufreq_Lite_V1_V2(原cpudvfs_cpuhvfs)和powerhal_cpu_ctrl改为使用scaling_available_frequencies里的频率，且对前者节点挂载文件
+    优化    Y_MediaTeK_Misc里，service.sh，为避免可能的负面影响，Thermal函数不再处理sports_mode，并将cg_policy_mode从1改为0
 ［P8］
 
     新增    X_Qualcomm_Misc里，针对Kgsl3d0驱动，新增一些功能优化
