@@ -7,6 +7,20 @@
 
 
 ## *『更新日志』*
+- ### ［Version25→26］
+［P0］
+
+    新增    ConfigTable.cfg里，Quaccomm部分，Kgsl3d0的频率范围，新增频率自动匹配功能以便频率调节
+    新增    PublicFuncs.sh里，ProcessManager，新增"停止进程并阻止其启动"功能，相应添加各进程二进制文件地址、修改ConfigTable.cfg里的说明，以应对某些系统进程的自启动
+    新增    Y_MediaTeK_Misc里，GPU.sh，使用帧基调频模式时，如果有相应的控制接口，不接受来自FPSGO内核模块的帧率余量(因为FPSGO已关闭)
+    新增    Y_MediaTeK_Misc里，GPU.sh，新增InputBoost关闭功能，并在ConfigTable.cfg里添加相应接口
+    优化    Y_MediaTeK_Misc里，GPU.sh，FastDVFS功能启停当代版本、旧版本，并相应修改ConfigTable.cfg里的说明
+    优化    ConfigTable.cfg里，Mediatek部分，SmartBoost_Disable默认值改为0；强制使用"负载基"模式一项，添加"不影响FastDVFS"的说明；提高天玑9000以后平台负载基余量下限，减少GPU带来的卡顿
+    去冗    ConfigTable.cfg里，MediaTeK部分，去除不必要的说明
+
+
+
+
 - ### ［Version24→25］
 ［P9］
 
