@@ -8,6 +8,11 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P1］
+
+    优化    Y_MediaTeK_Misc里，更新Tool_Tips目录里的两份文档
+    去冗    ConfigTable.cfg里，Quaccomm部分，Kgsl3d0_Min_Freq的默认值改回"Min"，由用户决定
+    修复    ConfigTable.cfg里，Mediatek部分，SmartBoost_Disable默认值改回1，以避免GPU负载异常
 ［P0］
 
     新增    ConfigTable.cfg里，Quaccomm部分，Kgsl3d0的频率范围，新增频率自动匹配功能以便频率调节
