@@ -1,6 +1,6 @@
 {
-	"version": "25",
-	"versionCode": 250,
-	"zipUrl": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/IMS_VAROS_R25.zip",
+	"version": "25_1",
+	"versionCode": 251,
+	"zipUrl": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/IMS_VAROS_R25P1.zip",
 	"changelog": "https://raw.githubusercontent.com/Garden0549/IMS_VAROS/refs/heads/main/ModuleItSelf/ChangeLog.md"
 }
