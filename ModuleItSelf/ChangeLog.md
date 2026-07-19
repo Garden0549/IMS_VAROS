@@ -8,6 +8,13 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P2］
+
+    优化    customize.sh里、action.sh里，尝试略微优化文本输出
+    优化    action.sh里，"尝试［开启/关闭］Horae进程"功能，将在启动Horae进程时，执行一次E_ColorOS_Horae里的机身外壳温度伪装脚本
+    新增    ConfigTable.cfg里，"伪装机身外壳温度"一项，新增"不伪装机身外壳温度"取值
+    修复    Y_MediaTeK_Misc里，service.sh里，修复停止gbe进程时实际上停止了fpsgo进程的错误
+    优化    Y_MediaTeK_Misc里，service.sh里，改进FPSGO内核模块是否存在的检测方式，确保检测到更早平台的FPSGO内核模块
 ［P1］
 
     优化    Y_MediaTeK_Misc里，更新Tool_Tips目录里的两份文档
