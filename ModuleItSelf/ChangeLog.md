@@ -8,6 +8,9 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P3］
+
+    修复    X_Qualcomm_Misc里，【彻底修复】从很多个版本前开始，就已错误的"input_boost_freq"的修改格式
 ［P2］
 
     优化    customize.sh里、action.sh里，尝试略微优化文本输出
