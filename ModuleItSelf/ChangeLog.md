@@ -8,6 +8,9 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P4］
+
+    新增    X_Qualcomm_Misc里，【彻底解决】部分搭载高通8Gen2或8Gen3等平台的设备上"触摸屏幕使CPU频率下限提升到硬件支持上限"的问题
 ［P3］
 
     修复    X_Qualcomm_Misc里，【彻底修复】从很多个版本前开始，就已错误的"input_boost_freq"的修改格式
