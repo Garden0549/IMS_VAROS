@@ -8,6 +8,11 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P5］
+
+    .....     部分搭载高通骁龙8Gen3平台设备的"触屏使Cluster0、2最低频率提升"现象，由［msm_kgsl］驱动引起，无用户空间接口，模块无法屏蔽
+    优化    ConfigTable.cfg里，Mediatek部分，为更新的平台进一步提升GPU余量，减少GPU造成的卡顿
+    新增    X_Qualcomm_Misc里，新增对如下调度的屏蔽功能：［QAPE QSPM PowerOpt］
 ［P4］
 
     新增    X_Qualcomm_Misc里，【彻底解决】部分搭载高通8Gen2或8Gen3等平台的设备上"触摸屏幕使CPU频率下限提升到硬件支持上限"的问题
