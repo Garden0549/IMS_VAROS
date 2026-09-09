@@ -8,6 +8,10 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P8］
+
+    去冗    X_Qualcomm_Misc里，移除Walt函数内的Others子函数
+    修复    A_ColorOS_OrmsUrcc里，ORMS配置处理方式，不再替换［/data/system/orms］内的配置，而直接删除此目录，尝试避免可能的不开机问题
 ［P7］
     
     修复    解决一个ROOT环境检测点
