@@ -8,6 +8,10 @@
 
 ## *『更新日志』*
 - ### ［Version25→26］
+［P9］
+
+    新增    Y_MediaTeK_Misc里，Thermal函数，将sports_mode设为0，停止激进策略以降低功耗
+    新增    Y_MediaTeK_Misc里，关闭"在CPU空闲时将sugov_ext频率算法中的util设为0"特性。此特性增加卡顿和功耗
 ［P8］
 
     去冗    X_Qualcomm_Misc里，移除Walt函数内的Others子函数
