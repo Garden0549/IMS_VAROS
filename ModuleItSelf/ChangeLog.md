@@ -9,6 +9,7 @@
 ## *『更新日志』*
 - ### ［Version26→27］
 ［P0］
+
     去冗    action.sh里，移除功能［②彻底卸载［应用增强服务］和［游戏助手］］
     优化    X_Qualcomm_Misc里，service.sh中，preemption从启用改为禁用，以免在安装GPU驱动并启用Vulkan的设备上可能发生的严重卡顿和死机
     去冗    ConfigTable里，移除MediaTek部分接口，移除Qualcomm部分接口
