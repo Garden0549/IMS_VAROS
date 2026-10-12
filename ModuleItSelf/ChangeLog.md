@@ -22,7 +22,7 @@
     去冗    ConfigTable里，移除以下调度的进程控制接口——ORMS、URCC、GameOpt、OIface、Horae，相应移除子模块内的代码
     去冗    ConfigTable里，移除除Horae外的内核模块接口，移除OIface的系统属性接口并相应移除子模块内的代码
     新增    新增G_ColorOS_MiscService子模块，新增功能：关闭adp服务以阻断游戏锁帧和部分调频功能(因此停止Horae服务不再那么必要)，关闭某种CPU控制
-    优化    A_ColorOS_OrmsUrcc，更名文件夹，优化ORMS、URCC处理
+    优化    A_ColorOS_OrmsUrcc，更名文件夹，优化ORMS、URCC处理 
 
 
 
