@@ -7,6 +7,26 @@
 
 
 ## *『更新日志』*
+- ### ［Version26→27］
+［P0］
+    去冗    action.sh里，移除功能［②彻底卸载［应用增强服务］和［游戏助手］］
+    优化    X_Qualcomm_Misc里，service.sh中，preemption从启用改为禁用，以免在安装GPU驱动并启用Vulkan的设备上可能发生的严重卡顿和死机
+    去冗    ConfigTable里，移除MediaTek部分接口，移除Qualcomm部分接口
+    优化/新增    Y_MediaTeK_Misc里，众多调整
+    新增    action.sh里，新增功能［⑤简单检测［游戏助手］功能为何消失］，用于检测［HDR］［高分辨率(超分)］选项消失的可能原因
+    去冗    ConfigTable里，移除如下配置项的接口——GED_KPI、SmartBoost、FastDVFS、InputBoost
+    回调    不再干预QSPM，相应移除ConfigTable内的接口、子模块内的代码
+    去冗    ConfigTable里，移除以下调度的控制接口——QAPE、QGPE、PowerOpt、Walt_InputBoost_Enable、PerformanceBoosts并全部默认关闭
+    修复    X_Qualcomm_Misc里，post-fs-data.sh中，解决一处因不支持sh而存在的语法问题
+    去冗    ConfigTable里，移除一些不必要的注释，精简一些表达
+    去冗    ConfigTable里，移除以下调度的进程控制接口——ORMS、URCC、GameOpt、OIface、Horae，相应移除子模块内的代码
+    去冗    ConfigTable里，移除除Horae外的内核模块接口，移除OIface的系统属性接口并相应移除子模块内的代码
+    新增    新增G_ColorOS_MiscService子模块，新增功能：关闭adp服务以阻断游戏锁帧和部分调频功能(因此停止Horae服务不再那么必要)，关闭某种CPU控制
+    优化    A_ColorOS_OrmsUrcc，更名文件夹，优化ORMS、URCC处理
+
+
+
+
 - ### ［Version25→26］
 ［P9］
 
