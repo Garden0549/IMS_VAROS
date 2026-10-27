@@ -8,6 +8,9 @@
 
 ## *『更新日志』*
 - ### ［Version26→27］
+［P1］
+
+    修复    Y_MediaTeK_Misc里，将对perf_ioctl的挂载从post-fs-data.sh移动到service.sh，以免可能的开机后黑屏
 ［P0］
 
     去冗    action.sh里，移除功能［②彻底卸载［应用增强服务］和［游戏助手］］
